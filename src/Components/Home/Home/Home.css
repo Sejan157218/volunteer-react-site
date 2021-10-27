@@ -1,0 +1,7 @@
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.home-container img{
+    width: 300px;
+}
