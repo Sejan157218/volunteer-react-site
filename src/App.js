@@ -8,6 +8,8 @@ import {
 import Home from './Components/Home/Home/Home';
 import Registration from './Components/Share/Registration/Registration';
 import AddEvent from './Components/AddEvent/AddEvent';
+import Myevent from './Components/Myevent/Myevent';
+import Admin from './Components/Admin/Admin';
 
 
 
@@ -23,8 +25,14 @@ function App() {
           <Link to="/addevent">
             Add Event
           </Link>
+          <Link to="/myevent">
+            My Event
+          </Link>
           <Link to="/registration">
             Registration
+          </Link>
+          <Link to="/admin">
+            Admin
           </Link>
         </ul>
         <Switch>
@@ -36,6 +44,12 @@ function App() {
           </Route>
           <Route path="/addevent">
             <AddEvent />
+          </Route>
+          <Route path="/myevent">
+            <Myevent />
+          </Route>
+          <Route path="/admin">
+            <Admin />
           </Route>
           <Route path="/registration/:id">
             <Registration />
